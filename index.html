@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <link rel="styleshoot" href="./css.style.css" />
+  
+</head>
+<style> table,th,td{
+    border: 2px solid rgb(7, 1, 1);
+    color: cornflowerblue;
+    background-color: rgb(123, 111, 197);
+    background-color: blueviolet;
+    background-color: brown;
+}
+
+body{
+    display: grid;
+    justify-content: center;
+}
+</style>
+
+<body style="margin: 25px;">
+
+   
+    <center>
+ <h2> Cadastro de Produtos</h2> 
+</center>
+<body>
+    <div>
+ <form id="infos-prod">
+     <label for="nome">Nome:</label>
+   <input type="text" id="Aroz" placeholder="Aroz">
+
+  <label for="Preço">preço:</label>
+    <input type="text" id="Aroz" placeholder="200,00">
+ 
+  É Prime? <input type="checkbox" nome="prime" id="prime">
+  <label for="prime"> É prime:</label>
+
+<input type="hidden" nome="idx" id="idx" value="novo" />
+
+<input type="submit" value="salvar">
+</form>
+
+<div id="msg-erro"></div>
+</div>
+<br><br>
+
+<table border="1">  
+
+<caption>
+    <h3> Lista de Produtos</h3>
+</caption>
+
+<thead>
+
+<tr>
+
+<th>identificador</th>
+<th>Nome do produto</th>
+<th>preço do produto</th>
+<th>prime</th>
+<th>ações</th>
+</tr>
+</thead>
+
+<tbody id="tbody"></tbody>
+
+
+
+</tbody>
+
+
+</table>
+<script src="index.js"></script>
+</body>
+</html>
